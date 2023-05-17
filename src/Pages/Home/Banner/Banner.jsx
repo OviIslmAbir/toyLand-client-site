@@ -9,7 +9,7 @@ const Banner = () => {
                       <img src="../../../../public/img/banner-1.jpg" style={{height:"580px"}} className="d-block w-100 rounded" alt="..."/>
                         <div className="carousel-caption d-flex align-items-center justify-content-center">
                             <div>
-                                <h2>Welcome to <span className='text-danger'>Toy Land</span></h2>
+                                <h1>Welcome to <span className='text-danger'>Toy Land</span></h1>
                                 <p>Get an exclusive toys at comparative price</p>
                             </div>
                         </div>
@@ -18,7 +18,7 @@ const Banner = () => {
                       <img src="../../../../public/img/banner-2.jpg" style={{height:"580px"}} className="d-block w-100 rounded" alt="..."/>
                        <div className="carousel-caption d-flex align-items-center justify-content-center">
                             <div>
-                                <h2>Welcome to <span className='text-danger'>Toy Land</span></h2>
+                                <h1>Welcome to <span className='text-danger'>Toy Land</span></h1>
                                 <p>Get an exclusive toys at comparative price</p>
                             </div>
                         </div>
@@ -27,7 +27,7 @@ const Banner = () => {
                        <img src="../../../../public/img/banner-3.jpg" style={{height:"580px"}} className="d-block w-100 rounded" alt="..."/>
                        <div className="carousel-caption d-flex align-items-center justify-content-center">
                             <div>
-                                <h2>Welcome to <span className='text-danger'>Toy Land</span></h2>
+                                <h1>Welcome to <span className='text-danger'>Toy Land</span></h1>
                                 <p>Get an exclusive toys at comparative price</p>
                             </div>
                         </div>

@@ -20,6 +20,7 @@ const Register = () => {
             const user = result.user;
             console.log(user)
             updateUserProfile(name, photo)
+            form.reset()
         })
         .catch((error) => {
             const errorMessage = error.message;
