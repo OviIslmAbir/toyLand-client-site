@@ -43,28 +43,31 @@ const Register = () => {
     return (
         <div className='container'>
             <div className="row align-items-center">
-                <div className="col-lg-5">
+                <div className="col-lg-7">
+                    <Lottie animationData={computer} loop={true} />
+                </div> 
+                <div className="col-lg-5 my-3">
                     <div className='shadow-lg p-5'>
                         <form onSubmit={handleRegister}>
                             <h3 className='text-center mb-3'>Please <span className='text-danger'>Register</span></h3>
                             <div className="input-group mb-3">
-                                <span className="input-group-text p-2" id="basic-addon1"><FaUser/></span>
-                                <input type="text" name='name' className="form-control p-2" placeholder="Enter Your Name" aria-label="Name" aria-describedby="basic-addon1" required/>
+                                <span className="input-group-text p-3" id="basic-addon1"><FaUser/></span>
+                                <input type="text" name='name' className="form-control p-3" placeholder="Enter Your Name" aria-label="Name" aria-describedby="basic-addon1" required/>
                             </div>
                             <div className="input-group mb-3">
-                                <span className="input-group-text p-2" id="basic-addon1"><FaImage/></span>
-                                <input type="url" name='photo' className="form-control p-2" placeholder="Enter Your Photo URL" aria-label="photo" aria-describedby="basic-addon1" required/>
+                                <span className="input-group-text p-3" id="basic-addon1"><FaImage/></span>
+                                <input type="url" name='photo' className="form-control p-3" placeholder="Enter Your Photo URL" aria-label="photo" aria-describedby="basic-addon1" required/>
                             </div>
                             <div className="input-group mb-3">
-                                <span className="input-group-text p-2" id="basic-addon1"><FaEnvelope/></span>
-                                <input type="email" name='email' className="form-control p-2" placeholder="Enter Your Email" aria-label="Email" aria-describedby="basic-addon1" required/>
+                                <span className="input-group-text p-3" id="basic-addon1"><FaEnvelope/></span>
+                                <input type="email" name='email' className="form-control p-3" placeholder="Enter Your Email" aria-label="Email" aria-describedby="basic-addon1" required/>
                             </div>
                             <div className="input-group mb-3">
-                                <span className="input-group-text p-2" id="basic-addon1"><FaKey/></span>
-                                <input type="password" name='password' className="form-control p-2" placeholder="Enter Your Password" aria-label="Password" aria-describedby="basic-addon1" required/>
+                                <span className="input-group-text p-3" id="basic-addon1"><FaKey/></span>
+                                <input type="password" name='password' className="form-control p-3" placeholder="Enter Your Password" aria-label="Password" aria-describedby="basic-addon1" required/>
                             </div>
                             <input type="submit" value="Register" className='btn btn-danger w-100' />
-                            <p className='text-center mt-3 p-2'>Already have an account? <Link className='text-danger' to='/login'>Login</Link></p>
+                            <p className='text-center mt-3 p-3'>Already have an account? <Link className='text-danger' to='/login'>Login</Link></p>
                         </form>
                         <div className='text-center mt-3'>
                             <span className='line'>or</span>
@@ -74,9 +77,6 @@ const Register = () => {
                         </div>
                     </div>
                 </div>
-                <div className="col-lg-7">
-                  <Lottie animationData={computer} loop={true} />
-                </div> 
             </div>
         </div>
     );

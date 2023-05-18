@@ -11,6 +11,7 @@ import Login from './Pages/Login/Login';
 import Register from './Pages/Register/Register';
 import AuthProvider from './Provider/AuthProvider';
 import ErrorPage from './Pages/Error/ErrorPage';
+import Blogs from './Pages/Blogs/Blogs';
 
 const router = createBrowserRouter([
   {
@@ -31,7 +32,8 @@ const router = createBrowserRouter([
         element: <Register></Register>,
       },
       {
-
+        path: "/blogs",
+        element: <Blogs></Blogs>,
       },
     ]
   },
