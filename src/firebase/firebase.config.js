@@ -1,12 +1,12 @@
 import { initializeApp } from "firebase/app";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAThwV6Z-GtDWe2kGswEE_7MOSkn6wSGCc",
-  authDomain: "toy-land-28b08.firebaseapp.com",
-  projectId: "toy-land-28b08",
-  storageBucket: "toy-land-28b08.appspot.com",
-  messagingSenderId: "125298593116",
-  appId: "1:125298593116:web:59952734f0409ba9e00599"
+  apiKey: import.meta.env.VITE_apiKey,
+  authDomain: import.meta.env.VITE_authDomain,
+  projectId: import.meta.env.VITE_projectId,
+  storageBucket: import.meta.env.VITE_storageBucket,
+  messagingSenderId: import.meta.env.VITE_messagingSenderId,
+  appId: import.meta.env.VITE_appId
 };
 
 const app = initializeApp(firebaseConfig);

@@ -12,7 +12,7 @@ li a{
    text-decoration: none;
    color: white;
 }
-li a:hover{
+li .a:hover{
    text-decoration: underline;
    color: white;
 }

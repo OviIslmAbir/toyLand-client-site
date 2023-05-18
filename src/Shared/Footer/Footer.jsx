@@ -26,10 +26,10 @@ const Footer = () => {
                     </div>
                     <div className="col-lg-3 col-12 mt-3 text-center text-lg-start">
                         <h2>About Us</h2>
-                        <li className='mt-3'><a href="">Help center</a></li>
-                        <li className='mt-3'><a href="">Store location</a></li>
-                        <li className='mt-3'><a href="">Privacy & Policy</a></li>
-                        <li className='mt-3'><a href="">Trams of Service</a></li>
+                        <li className='mt-3'><a className='a' href="">Help center</a></li>
+                        <li className='mt-3'><a className='a' href="">Store location</a></li>
+                        <li className='mt-3'><a className='a' href="">Privacy & Policy</a></li>
+                        <li className='mt-3'><a className='a' href="">Trams of Service</a></li>
                     </div>
                     <div className="col-lg-12 mt-5">
                         <h2 className='text-center'>Contact Us</h2>
