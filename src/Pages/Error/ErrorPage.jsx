@@ -3,7 +3,9 @@ import  Lottie  from "lottie-react";
 import error from '../../assets/error.json'
 import { FaHome} from 'react-icons/fa';
 import { Link } from 'react-router-dom';
+import useTitle from '../../Hooks/useTitle';
 const ErrorPage = () => {
+    useTitle("404")
     return (
         <div className='container'>
             <div className="row align-items-center">

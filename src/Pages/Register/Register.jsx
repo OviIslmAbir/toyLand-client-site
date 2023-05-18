@@ -4,8 +4,9 @@ import computer from '../../assets/computer.json'
 import { FaEnvelope, FaKey, FaImage, FaUser, FaGoogle } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import { AuthContext } from '../../Provider/AuthProvider';
-import { updateProfile } from 'firebase/auth';
+import useTitle from '../../Hooks/useTitle';
 const Register = () => {
+    useTitle('Register')
     const {createUser, loginAndRegisterWithGoogle, updateUserProfile} = useContext(AuthContext)
     const handleRegister = event => {
         event.preventDefault()

@@ -5,7 +5,9 @@ import { FaEnvelope, FaKey,FaGoogle } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import { AuthContext } from '../../Provider/AuthProvider';
 import './login.css'
+import useTitle from '../../Hooks/useTitle';
 const Login = () => {
+    useTitle('Login')
     const {login, loginAndRegisterWithGoogle} = useContext(AuthContext)
     const handleLogin = event => {
         event.preventDefault()
