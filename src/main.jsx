@@ -57,22 +57,22 @@ const router = createBrowserRouter([
       {
         path: "/updateMyToy/:id",
         element: <UpdateMyToy></UpdateMyToy>,
-        loader: ({params}) => fetch(`http://localhost:5000/addToy/${params.id}`)
+        loader: ({params}) => fetch(`https://assingment-11-server-site.vercel.app/addToy/${params.id}`)
       },
       {
         path: "/marvelToyDetails/:id",
         element: <PrivateRoute><ToyDetails></ToyDetails></PrivateRoute>,
-        loader : ({params}) => fetch(`http://localhost:5000/marvelToys/${params.id}`)
+        loader : ({params}) => fetch(`https://assingment-11-server-site.vercel.app/marvelToys/${params.id}`)
       },
       {
         path: "/transformerToyDetails/:id",
         element: <PrivateRoute><ToyDetails></ToyDetails></PrivateRoute>,
-        loader : ({params}) => fetch(`http://localhost:5000/transformerToys/${params.id}`)
+        loader : ({params}) => fetch(`https://assingment-11-server-site.vercel.app/transformerToys/${params.id}`)
       },
       {
         path: "/starToyDetails/:id",
         element: <PrivateRoute><ToyDetails></ToyDetails></PrivateRoute>,
-        loader : ({params}) => fetch(`http://localhost:5000/starToys/${params.id}`)
+        loader : ({params}) => fetch(`https://assingment-11-server-site.vercel.app/starToys/${params.id}`)
       },
     ]
   },

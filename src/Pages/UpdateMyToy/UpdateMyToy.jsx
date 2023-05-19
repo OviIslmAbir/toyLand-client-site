@@ -19,7 +19,7 @@ const UpdateMyToy = () => {
             quantity,
             details
         }
-        fetch(`http://localhost:5000/addToy/${_id}`, {
+        fetch(`https://assingment-11-server-site.vercel.app/addToy/${_id}`, {
             method: "PUT",
             headers: {
                 'content-type': 'application/json'
@@ -46,20 +46,20 @@ const UpdateMyToy = () => {
             <form onSubmit={updateAToy}>
                 <div className="row">
                     <div className="col-lg-6">
-                        <div class="form-floating mb-3">
-                            <input type="text" placeholder="price" defaultValue={price} name='price' class="form-control"/>
+                        <div className="form-floating mb-3">
+                            <input type="text" placeholder="price" defaultValue={price} name='price' className="form-control"/>
                             <label>Price</label>
                         </div>
                     </div>
                     <div className='col-lg-6'>
-                        <div class="form-floating mb-3">
-                        <input type="text" class="form-control" defaultValue={quantity} name='quantity' placeholder="quantity"/>
+                        <div className="form-floating mb-3">
+                        <input type="text" className="form-control" defaultValue={quantity} name='quantity' placeholder="quantity"/>
                             <label>Quantity</label>
                         </div>
                     </div>   
                     <div className='col-lg-12'>
-                        <div class="form-floating mb-3">
-                            <input type="text" class="form-control" defaultValue={details} name='details' placeholder="details"/>
+                        <div className="form-floating mb-3">
+                            <input type="text" className="form-control" defaultValue={details} name='details' placeholder="details"/>
                             <label>Details</label>
                         </div>
                     </div> 

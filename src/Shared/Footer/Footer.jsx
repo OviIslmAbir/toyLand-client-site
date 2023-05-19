@@ -33,7 +33,7 @@ const Footer = () => {
                     </div>
                     <div className="col-lg-12 mt-5">
                         <h2 className='text-center'>Contact Us</h2>
-                        <div class="social-menu mt-5">
+                        <div className="social-menu mt-5">
                             <ul>
                                 <li><a href=""><FaFacebook className=' my-2' style={{width:"30px", height:"30px"}}/></a></li>
                                 <li><a href=""><FaTwitter className='  my-2' style={{width:"30px", height:"30px"}}/></a></li>

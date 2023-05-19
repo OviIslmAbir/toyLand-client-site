@@ -29,7 +29,7 @@ const AddAToy = () => {
             quantity: quantity,
             details: details
         }
-        fetch('http://localhost:5000/addToy', {
+        fetch('https://assingment-11-server-site.vercel.app/addToy', {
             method: "POST",
             headers: {
                 'content-type': 'application/json'
@@ -57,56 +57,56 @@ const AddAToy = () => {
                 <form onSubmit={addToy}>
                     <div className="row">
                         <div className="col-lg-6">
-                            <div class="form-floating mb-3">
-                                    <input type="text" placeholder="toyName" name='toyName' class="form-control"/>
+                            <div className="form-floating mb-3">
+                                    <input type="text" placeholder="toyName" name='toyName' className="form-control"/>
                                     <label>Toy Name</label>
                             </div>
                         </div>
                         <div className='col-lg-6'>
-                            <div class="form-floating mb-3">
-                                <input type="url" class="form-control" name='toyPhoto' placeholder="toyPhoto"/>
+                            <div className="form-floating mb-3">
+                                <input type="url" className="form-control" name='toyPhoto' placeholder="toyPhoto"/>
                                 <label>Toy Photo</label>
                             </div>
                         </div>   
                         <div className='col-lg-6'>
-                            <div class="form-floating mb-3">
-                                <input type="email" defaultValue={user?.email} class="form-control" placeholder="email"/>
+                            <div className="form-floating mb-3">
+                                <input type="email" defaultValue={user?.email} className="form-control" placeholder="email"/>
                                 <label>Email</label>
                             </div>
                         </div>   
                         <div className='col-lg-6'>
-                            <div class="form-floating mb-3">
-                                <input defaultValue={user?.displayName} type="text" class="form-control" placeholder="Seller Name"/>
+                            <div className="form-floating mb-3">
+                                <input defaultValue={user?.displayName} type="text" className="form-control" placeholder="Seller Name"/>
                                 <label>Seller Name</label>
                             </div>
                         </div>   
                         <div className='col-lg-6'>
-                            <div class="form-floating mb-3">
-                                <input type="text" name='categoryName' class="form-control" placeholder="CategoryName"/>
+                            <div className="form-floating mb-3">
+                                <input type="text" name='categoryName' className="form-control" placeholder="CategoryName"/>
                                 <label>Category Name</label>
                             </div>
                         </div>   
                         <div className='col-lg-6'>
-                            <div class="form-floating mb-3">
-                                <input type="text" name="price" class="form-control" placeholder="price"/>
+                            <div className="form-floating mb-3">
+                                <input type="text" name="price" className="form-control" placeholder="price"/>
                                 <label>Price</label>
                             </div>
                         </div>   
                         <div className='col-lg-6'>
-                            <div class="form-floating mb-3">
-                                <input type="text" name='rating' class="form-control" placeholder="rating"/>
+                            <div className="form-floating mb-3">
+                                <input type="text" name='rating' className="form-control" placeholder="rating"/>
                                 <label>Rating</label>
                             </div>
                         </div>   
                         <div className='col-lg-6'>
-                            <div class="form-floating mb-3">
-                                <input type="text" name='quantity' class="form-control" placeholder="quantity"/>
+                            <div className="form-floating mb-3">
+                                <input type="text" name='quantity' className="form-control" placeholder="quantity"/>
                                 <label>Quantity</label>
                             </div>
                         </div>   
                         <div className='col-lg-12'>
-                            <div class="form-floating mb-3">
-                                <input type="text" name='details' class="form-control" placeholder="details"/>
+                            <div className="form-floating mb-3">
+                                <input type="text" name='details' className="form-control" placeholder="details"/>
                                 <label>Details</label>
                             </div>
                         </div>   
