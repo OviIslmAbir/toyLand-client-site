@@ -4,7 +4,9 @@ import { FaUserCircle } from 'react-icons/fa';
 import { useContext } from 'react';
 import { AuthContext } from '../../Provider/AuthProvider';
 import {Tooltip} from 'react-tooltip';
+import './Navbar.css'
 const Navbar = () => {
+    
     const {user, logOut} = useContext(AuthContext)
     const handleLogout = () =>{
         logOut()
@@ -12,7 +14,7 @@ const Navbar = () => {
             .catch(() => {})
     }
     return (
-        <nav className="navbar navbar-expand-lg bg-body-tertiary container">
+        <nav className="navbar navbar-expand-lg bg-body-tertiary container position-sticky top-0 z-2">
             <div className="container-fluid">
                 <Link className="navbar-brand" to='/'>Toy Land</Link>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -42,8 +44,9 @@ const Navbar = () => {
                     </ul>
                     <div>
                         {
-                            user ? <button onClick={handleLogout}  className='btn bg-danger text-white me-2'>Log out</button>
-                            : <Link to='/login'><button className='btn bg-danger text-white me-2'>Login</button></Link>
+                            user ? <button onClick={handleLogout}  className='random-btn btn text-white me-2'>Log out</button>
+                            : <Link to='/login'><button style={{width:"80px"}} className='random-btn btn text-white me-2'>Login</button></Link>
+
                         }
                         {
                             user ? 

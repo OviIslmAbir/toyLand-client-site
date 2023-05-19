@@ -67,7 +67,7 @@ const Register = () => {
                                 <span className="input-group-text p-3" id="basic-addon1"><FaKey/></span>
                                 <input type="password" name='password' className="form-control p-3" placeholder="Enter Your Password" aria-label="Password" aria-describedby="basic-addon1" required/>
                             </div>
-                            <input type="submit" value="Register" className='btn btn-danger w-100' />
+                            <input type="submit" value="Register" className='random-btn btn text-white w-100' />
                             <p className='text-center mt-3 p-3'>Already have an account? <Link className='text-danger' to='/login'>Login</Link></p>
                         </form>
                         <div className='text-center mt-3'>

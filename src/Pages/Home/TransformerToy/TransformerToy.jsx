@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
+import '../ToyCss/Toy.css'
 const TransformerToy = ({transformerToy}) => {
     const {name, price, rating, img, _id} = transformerToy
     return (
@@ -13,7 +13,7 @@ const TransformerToy = ({transformerToy}) => {
                     <p class="card-text">Price: {price}</p>
                     <p class="card-text">Rating: {rating}</p>
                     <div className='text-end'>
-                      <Link to={`/transformerToyDetails/${_id}`}><button className='btn btn-danger'>View details</button></Link>
+                      <Link to={`/transformerToyDetails/${_id}`}><button className='random-btn text-white btn'>View details</button></Link>
                     </div>
                 </div>
                 </div>

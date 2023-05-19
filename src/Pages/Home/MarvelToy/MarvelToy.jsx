@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
+import '../ToyCss/Toy.css'
 const MarvelToy = ({marvelToy}) => {
     const {_id ,name, price, rating, img} = marvelToy
     return (
@@ -13,7 +13,7 @@ const MarvelToy = ({marvelToy}) => {
                     <p class="card-text">Price: {price}</p>
                     <p class="card-text">Rating: {rating}</p>
                     <div className='text-end'>
-                      <Link to={`/marvelToyDetails/${_id}`}><button className='btn btn-danger'>View details</button></Link>
+                      <Link to={`/marvelToyDetails/${_id}`}><button className='btn random-btn text-white'>View details</button></Link>
                     </div>
                 </div>
                 </div>
