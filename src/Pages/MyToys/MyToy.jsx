@@ -1,8 +1,7 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import '../Home/ToyCss/Toy.css'
-const MyToy = ({myToy}) => {
-    const {sellerName, toyName, categoryName, quantity, price} = myToy
+const MyToy = ({myToy, handleDelete}) => {
+    const {sellerName, toyName, categoryName, quantity, price, _id} = myToy
     return (
             <tr className='text-center'>
                 <td>{sellerName}</td>
@@ -10,7 +9,8 @@ const MyToy = ({myToy}) => {
                 <td>{categoryName}</td>
                 <td>{quantity}</td>
                 <td>{price}</td>
-                <td><Link to={``}><button className='btn random-btn text-white'>View details</button></Link></td>
+                <td><button onClick={() => handleDelete(_id)} className='btn random-btn text-white'>Delete</button></td>
+                <td><button className='btn random-btn text-white'>Update</button></td>
             </tr>
         
     );

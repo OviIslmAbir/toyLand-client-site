@@ -46,6 +46,7 @@ const AddAToy = () => {
                     icon: 'success',
                     confirmButtonText: 'OK'
                 })
+                from.reset()
              }
          })
     }
