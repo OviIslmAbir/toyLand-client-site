@@ -14,8 +14,9 @@ const Navbar = () => {
             .catch(() => {})
     }
     return (
-        <nav className="navbar navbar-expand-lg bg-body-tertiary container position-sticky top-0 z-2">
-            <div className="container-fluid">
+       <div className='position-sticky top-0 z-2'>
+            <nav className="navbar navbar-expand-lg  bg-body-tertiary">
+            <div className="container">
                 <Link className="navbar-brand" to='/'>Toy Land</Link>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
@@ -34,10 +35,10 @@ const Navbar = () => {
                         {
                             user ? <>
                             <li className="nav-item">
-                                <Link to="" className="nav-link me-3 fw-bold">My Toys</Link>
+                                <Link to="/myToys" className="nav-link me-3 fw-bold">My Toys</Link>
                             </li>
                             <li className="nav-item">
-                                <Link to="" className="nav-link me-3 fw-bold">Add A Toy</Link>
+                                <Link to="/addAToy" className="nav-link me-3 fw-bold">Add A Toy</Link>
                             </li>
                             </> : <></>
                         }
@@ -65,6 +66,7 @@ const Navbar = () => {
                 </div>
             </div>
         </nav>
+       </div>
     );
 };
 

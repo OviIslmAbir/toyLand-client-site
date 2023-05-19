@@ -14,6 +14,8 @@ import ErrorPage from './Pages/Error/ErrorPage';
 import Blogs from './Pages/Blogs/Blogs';
 import ToyDetails from './Pages/ToyDetails/ToyDetails';
 import PrivateRoute from './Routes/PrivateRoute';
+import AddAToy from './Pages/AddAToy/AddAToy';
+import MyToys from './Pages/MyToys/MyToys';
 
 
 const router = createBrowserRouter([
@@ -37,6 +39,14 @@ const router = createBrowserRouter([
       {
         path: "/blogs",
         element: <Blogs></Blogs>,
+      },
+      {
+        path: "/addAToy",
+        element: <PrivateRoute><AddAToy></AddAToy></PrivateRoute>,
+      },
+      {
+        path: "/myToys",
+        element: <PrivateRoute><MyToys></MyToys></PrivateRoute>,
       },
       {
         path: "/marvelToyDetails/:id",

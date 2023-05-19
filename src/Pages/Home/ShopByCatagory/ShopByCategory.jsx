@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
-
 import TransformerToy from '../TransformerToy/TransformerToy';
 import StarWarsToy from '../StarToy/StarWarsToy';
 import MarvelToy from '../MarvelToy/MarvelToy';
@@ -32,6 +31,7 @@ const ShopByCategory = () => {
     
     return (
         <div className='container mt-5'>
+            <h2 className='text-center my-5'>Shop By Category</h2>
                 <Tabs>
                     <TabList className='text-center'>
                        <Tab>Star wars toys</Tab>
