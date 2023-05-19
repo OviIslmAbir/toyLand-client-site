@@ -1,7 +1,8 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const TransformerToy = ({transformerToy}) => {
-    const {name, price, rating, img} = transformerToy
+    const {name, price, rating, img, _id} = transformerToy
     return (
         <div>
             <div class="col">
@@ -12,7 +13,7 @@ const TransformerToy = ({transformerToy}) => {
                     <p class="card-text">Price: {price}</p>
                     <p class="card-text">Rating: {rating}</p>
                     <div className='text-end'>
-                      <button className='btn btn-danger'>View details</button>
+                      <Link to={`/transformerToyDetails/${_id}`}><button className='btn btn-danger'>View details</button></Link>
                     </div>
                 </div>
                 </div>

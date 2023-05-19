@@ -34,11 +34,18 @@ const ShopByCategory = () => {
         <div className='container mt-5'>
                 <Tabs>
                     <TabList className='text-center'>
+                       <Tab>Star wars toys</Tab>
                        <Tab>Marvel toys</Tab>
                        <Tab>Transformer toys</Tab>
-                       <Tab>Star wars toys</Tab>
                     </TabList>
-
+                    <TabPanel>
+                        <h3 className='text-center'>Star Wars Toys</h3>
+                        <div class="row row-cols-1 row-cols-lg-3 g-4 mt-4">
+                          {
+                            starToys.map(starWarsToy => <StarWarsToy key={starWarsToy.id} starWarsToy={starWarsToy}></StarWarsToy>)
+                          }
+                        </div>
+                    </TabPanel>
                     <TabPanel>
                         <h3 className='text-center'>Marvel Toys</h3>
                         <div class="row row-cols-1 row-cols-lg-4 g-4 mt-4">
@@ -56,14 +63,6 @@ const ShopByCategory = () => {
                             transformerToys.map(transformerToy => 
                             <TransformerToy key={transformerToy.id} transformerToy={transformerToy}
                             ></TransformerToy>)
-                          }
-                        </div>
-                    </TabPanel>
-                    <TabPanel>
-                        <h3 className='text-center'>Star Wars Toys</h3>
-                        <div class="row row-cols-1 row-cols-lg-3 g-4 mt-4">
-                          {
-                            starToys.map(starWarsToy => <StarWarsToy key={starWarsToy.id} starWarsToy={starWarsToy}></StarWarsToy>)
                           }
                         </div>
                     </TabPanel>

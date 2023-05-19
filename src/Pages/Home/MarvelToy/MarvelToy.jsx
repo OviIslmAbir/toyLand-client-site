@@ -1,7 +1,8 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const MarvelToy = ({marvelToy}) => {
-    const {name, price, rating, img} = marvelToy
+    const {_id ,name, price, rating, img} = marvelToy
     return (
         <div>
             <div class="col">
@@ -12,7 +13,7 @@ const MarvelToy = ({marvelToy}) => {
                     <p class="card-text">Price: {price}</p>
                     <p class="card-text">Rating: {rating}</p>
                     <div className='text-end'>
-                      <button className='btn btn-danger'>View details</button>
+                      <Link to={`/marvelToyDetails/${_id}`}><button className='btn btn-danger'>View details</button></Link>
                     </div>
                 </div>
                 </div>

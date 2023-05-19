@@ -12,6 +12,7 @@ import Register from './Pages/Register/Register';
 import AuthProvider from './Provider/AuthProvider';
 import ErrorPage from './Pages/Error/ErrorPage';
 import Blogs from './Pages/Blogs/Blogs';
+import MarvelToyDetails from './Pages/MarvelToyDetails/MarvelToyDetails';
 
 const router = createBrowserRouter([
   {
@@ -34,6 +35,21 @@ const router = createBrowserRouter([
       {
         path: "/blogs",
         element: <Blogs></Blogs>,
+      },
+      {
+        path: "/marvelToyDetails/:id",
+        element: <MarvelToyDetails></MarvelToyDetails>,
+        loader : ({params}) => fetch(`http://localhost:5000/marvelToys/${params.id}`)
+      },
+      {
+        path: "/transformerToyDetails/:id",
+        element: <MarvelToyDetails></MarvelToyDetails>,
+        loader : ({params}) => fetch(`http://localhost:5000/transformerToys/${params.id}`)
+      },
+      {
+        path: "/starToyDetails/:id",
+        element: <MarvelToyDetails></MarvelToyDetails>,
+        loader : ({params}) => fetch(`http://localhost:5000/starToys/${params.id}`)
       },
     ]
   },
