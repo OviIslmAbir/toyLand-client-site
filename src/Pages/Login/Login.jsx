@@ -2,13 +2,16 @@ import React, { useContext } from 'react';
 import  Lottie  from "lottie-react";
 import computer from '../../assets/computer.json'
 import { FaEnvelope, FaKey,FaGoogle } from 'react-icons/fa';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../Provider/AuthProvider';
 import './login.css'
 import useTitle from '../../Hooks/useTitle';
 const Login = () => {
     useTitle('Login')
     const {login, loginAndRegisterWithGoogle} = useContext(AuthContext)
+    const location = useLocation()
+    const navigate = useNavigate()
+    const from = location.state?.from?.pathname || '/'
     const handleLogin = event => {
         event.preventDefault()
         const form = event.target
@@ -20,6 +23,7 @@ const Login = () => {
             const loggedUser = result.user;
             console.log(loggedUser)
             form.reset()
+            navigate(from)
         })
         .catch((error) => {
             const errorMessage = error.message;

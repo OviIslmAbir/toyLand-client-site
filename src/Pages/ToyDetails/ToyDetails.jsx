@@ -1,9 +1,9 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
 
-const MarvelToyDetails = () => {
-    const marvelToy = useLoaderData()
-    const {name, price, rating, img, details, quantity, categoryName} = marvelToy
+const ToyDetails = () => {
+    const toy = useLoaderData()
+    const {name, price, rating, img, details, quantity, categoryName} = toy
     return (
         <div className='container'>
             <h3 className='text-center my-3'>{categoryName}</h3>
@@ -22,7 +22,7 @@ const MarvelToyDetails = () => {
                 </div>
             </div>
         </div>
-    );
+    )
 };
 
-export default MarvelToyDetails;
+export default ToyDetails;

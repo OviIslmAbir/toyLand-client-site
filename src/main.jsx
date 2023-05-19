@@ -12,7 +12,9 @@ import Register from './Pages/Register/Register';
 import AuthProvider from './Provider/AuthProvider';
 import ErrorPage from './Pages/Error/ErrorPage';
 import Blogs from './Pages/Blogs/Blogs';
-import MarvelToyDetails from './Pages/MarvelToyDetails/MarvelToyDetails';
+import ToyDetails from './Pages/ToyDetails/ToyDetails';
+import PrivateRoute from './Routes/PrivateRoute';
+
 
 const router = createBrowserRouter([
   {
@@ -38,17 +40,17 @@ const router = createBrowserRouter([
       },
       {
         path: "/marvelToyDetails/:id",
-        element: <MarvelToyDetails></MarvelToyDetails>,
+        element: <PrivateRoute><ToyDetails></ToyDetails></PrivateRoute>,
         loader : ({params}) => fetch(`http://localhost:5000/marvelToys/${params.id}`)
       },
       {
         path: "/transformerToyDetails/:id",
-        element: <MarvelToyDetails></MarvelToyDetails>,
+        element: <PrivateRoute><ToyDetails></ToyDetails></PrivateRoute>,
         loader : ({params}) => fetch(`http://localhost:5000/transformerToys/${params.id}`)
       },
       {
         path: "/starToyDetails/:id",
-        element: <MarvelToyDetails></MarvelToyDetails>,
+        element: <PrivateRoute><ToyDetails></ToyDetails></PrivateRoute>,
         loader : ({params}) => fetch(`http://localhost:5000/starToys/${params.id}`)
       },
     ]
