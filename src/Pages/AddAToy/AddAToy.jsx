@@ -2,22 +2,24 @@ import React, { useContext } from 'react';
 import '../Home/ToyCss/Toy.css'
 import { AuthContext } from '../../Provider/AuthProvider';
 import Swal from 'sweetalert2'
+import useTitle from '../../Hooks/useTitle';
 const AddAToy = () => {
     const {user} = useContext(AuthContext)
+    useTitle("Add a toy")
     const addToy = event => {
         event.preventDefault()
         const from = event.target
         const toyName = from.toyName.value
         const toyPhoto = from.toyPhoto.value
         const email = user?.email
-        const userName  = user?.displayName
+        const sellerName  = user?.displayName
         const categoryName = from.categoryName.value
         const price = from.price.value
         const rating = from.rating.value
         const quantity = from.quantity.value
         const details = from.details.value
         const toy = {
-            userName,
+            sellerName,
             email,
             toyName: toyName,
             toyPhoto: toyPhoto,
@@ -73,8 +75,8 @@ const AddAToy = () => {
                         </div>   
                         <div className='col-lg-6'>
                             <div class="form-floating mb-3">
-                                <input defaultValue={user?.displayName} type="text" class="form-control" placeholder="userName"/>
-                                <label>User Name</label>
+                                <input defaultValue={user?.displayName} type="text" class="form-control" placeholder="Seller Name"/>
+                                <label>Seller Name</label>
                             </div>
                         </div>   
                         <div className='col-lg-6'>
