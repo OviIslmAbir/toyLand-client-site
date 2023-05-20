@@ -12,7 +12,7 @@ const AllToys = () => {
        setLoader(false)
        fetch('https://assingment-11-server-site.vercel.app/addToys')
        .then(res => res.json())
-       .then(data => setAllToys(data))
+       .then(data => setAllToys(data.slice(0, 20)))
     }, [])
 
     const [searchTerm, setSearchTerm] = useState('');

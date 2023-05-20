@@ -2,11 +2,12 @@ import React from 'react';
 import { useLoaderData } from 'react-router-dom';
 import Swal from 'sweetalert2'
 import '../Home/ToyCss/Toy.css'
+import useTitle from '../../Hooks/useTitle';
 const UpdateMyToy = () => {
     const toy = useLoaderData()
     console.log(toy)
     const {_id, price , quantity, details} = toy
-
+    useTitle('Update toy')
     const updateAToy = event => {
         event.preventDefault() 
         const from = event.target

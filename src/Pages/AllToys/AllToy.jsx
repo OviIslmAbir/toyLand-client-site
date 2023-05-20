@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 const AllToy = ({allToy}) => {
-    const {sellerName, toyName, categoryName, quantity, price} = allToy
+    const {sellerName, toyName, categoryName, quantity, price, _id} = allToy
     return (
       <>    
         <tr className='text-center'>
@@ -10,7 +10,7 @@ const AllToy = ({allToy}) => {
             <td>{categoryName}</td>
             <td>{quantity}</td>
             <td>{price}</td>
-            <td><Link to={``}><button className='btn random-btn text-white'>View details</button></Link></td>
+            <td><Link to={`/allToys/${_id}`}><button className='btn random-btn text-white'>View details</button></Link></td>
         </tr>
       </>
         
