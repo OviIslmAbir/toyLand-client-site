@@ -6,7 +6,7 @@ import useTitle from '../../Hooks/useTitle';
 const UpdateMyToy = () => {
     const toy = useLoaderData()
     console.log(toy)
-    const {_id, price , quantity, details} = toy
+    const {_id, price , quantity, details, toyName} = toy
     useTitle('Update toy')
     const updateAToy = event => {
         event.preventDefault() 
@@ -44,6 +44,7 @@ const UpdateMyToy = () => {
     return (
         <div className='container'>
             <h2 className='text-center my-5'>Update My Toy</h2>
+            <h3 className='text-center my-5'>Toy name: {toyName}</h3>
             <form onSubmit={updateAToy}>
                 <div className="row">
                     <div className="col-lg-6">

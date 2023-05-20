@@ -10,6 +10,7 @@ const Footer = () => {
                     <div className="col-lg-3 col-12 mt-3 text-center text-lg-start">
                         <Link className="navbar-brand" to='/'><h2>Toy Land</h2></Link>
                         <p>Welcome to Toy Land</p>
+                        <p>&copy; copyright Toy Land, 2023</p>
                     </div>
                     <div className="col-lg-3 col-12 mt-3 text-center text-lg-start">
                         <h2>Categories</h2>

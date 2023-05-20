@@ -25,7 +25,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Main></Main>,
-    // errorElement: <ErrorPage></ErrorPage>,
+    errorElement: <ErrorPage></ErrorPage>,
     children: [
       {
         path: "/",
@@ -50,7 +50,7 @@ const router = createBrowserRouter([
       {
         path: "/allToys/:id",
         element: <AllToyDetails></AllToyDetails>,
-        loader: ({params}) => fetch(`http://localhost:5000/addToys/${params.id}`)
+        loader: ({params}) => fetch(`https://assingment-11-server-site.vercel.app/addToys/${params.id}`)
       },
       {
         path: "/addAToy",
