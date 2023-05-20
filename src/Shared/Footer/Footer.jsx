@@ -36,11 +36,11 @@ const Footer = () => {
                         <h2 className='text-center'>Contact Us</h2>
                         <div className="social-menu mt-5">
                             <ul>
-                                <li><a href=""><FaFacebook className=' my-2' style={{width:"30px", height:"30px"}}/></a></li>
-                                <li><a href=""><FaTwitter className='  my-2' style={{width:"30px", height:"30px"}}/></a></li>
-                                <li><a href=""><FaInstagram className='  my-2' style={{width:"30px", height:"30px"}}/></a></li>
-                                <li><a href=""><FaYoutube className='  my-2' style={{width:"30px", height:"30px"}}/></a></li>
-                                <li><a href=""><FaLinkedin className='  my-2' style={{width:"30px", height:"30px"}}/></a></li>
+                                <li><a href="https://www.facebook.com/" target='blank'><FaFacebook className=' my-2' style={{width:"30px", height:"30px"}}/></a></li>
+                                <li><a href="https://twitter.com/i/flow/login" target='blank'><FaTwitter className='  my-2' style={{width:"30px", height:"30px"}}/></a></li>
+                                <li><a href="https://www.instagram.com/" target='blank'><FaInstagram className='  my-2' style={{width:"30px", height:"30px"}}/></a></li>
+                                <li><a href="https://www.youtube.com/" target='blank'><FaYoutube className='  my-2' style={{width:"30px", height:"30px"}}/></a></li>
+                                <li><a href="https://www.linkedin.com/login" target='blank'><FaLinkedin className='  my-2' style={{width:"30px", height:"30px"}}/></a></li>
                             </ul>
                         </div>
                     </div>
